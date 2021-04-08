@@ -15,3 +15,4 @@ You can click the Preview link to take a look at your changes.
 [dev-guides](https://cs4118.github.io/dev-guides/)
 
 [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+[make-kpkg is (being) retired](https://unix.stackexchange.com/questions/238469/difference-between-make-kpkg-and-make-deb-pkg)
