@@ -1,0 +1,54 @@
+william@NPC:~/linux$ sudo make install
+sh ./arch/x86/boot/install.sh 5.11.0bb arch/x86/boot/bzImage \
+	System.map "/boot"
+run-parts: executing /etc/kernel/postinst.d/apt-auto-removal 5.11.0bb /boot/vmlinuz-5.11.0bb
+run-parts: executing /etc/kernel/postinst.d/initramfs-tools 5.11.0bb /boot/vmlinuz-5.11.0bb
+update-initramfs: Generating /boot/initrd.img-5.11.0bb
+run-parts: executing /etc/kernel/postinst.d/unattended-upgrades 5.11.0bb /boot/vmlinuz-5.11.0bb
+run-parts: executing /etc/kernel/postinst.d/update-notifier 5.11.0bb /boot/vmlinuz-5.11.0bb
+run-parts: executing /etc/kernel/postinst.d/zz-update-grub 5.11.0bb /boot/vmlinuz-5.11.0bb
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.11.0bb
+Found initrd image: /boot/initrd.img-5.11.0bb
+Found linux image: /boot/vmlinuz-5.11.0
+Found initrd image: /boot/initrd.img-5.11.0
+Found linux image: /boot/vmlinuz-5.8.0-48-generic
+Found initrd image: /boot/initrd.img-5.8.0-48-generic
+Adding boot menu entry for UEFI Firmware Settings
+done
+william@NPC:~/linux$ 
+
+
+
+
+root      392185  391885  0 07:22 pts/0    00:00:00 make -f ./scripts/Makefile.build obj=arch/x86/boot install
+root      392192  392185  0 07:22 pts/0    00:00:00 /bin/sh -c sh ./arch/x86/boot/install.sh 5.11.0bb arch/x86/boot/bzImage \ ?System.map "/boot"
+root      392193  392192  0 07:22 pts/0    00:00:00 /bin/sh /sbin/installkernel 5.11.0bb arch/x86/boot/bzImage System.map /boot
+root      392202  392193  0 07:22 pts/0    00:00:00 run-parts --verbose --exit-on-error --arg=5.11.0bb --arg=/boot/vmlinuz-5.11.0bb /etc/kernel/postinst.d
+root      392254  392202  0 07:22 pts/0    00:00:00 /bin/sh -e /etc/kernel/postinst.d/initramfs-tools 5.11.0bb /boot/vmlinuz-5.11.0bb
+root      392256  392254  0 07:22 pts/0    00:00:00 /bin/sh /usr/sbin/update-initramfs -c -k 5.11.0bb -b /boot
+root      392258  392256  0 07:22 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+root      398395  392258  0 07:23 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+root      398397  398395  0 07:23 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+root      398400  398397  0 07:23 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+root      398402  398397 99 07:23 pts/0    00:01:04 gzip
+root      398403  398400  9 07:23 pts/0    00:00:06 cpio --quiet -o -H newc
+
+root      392185  391885  0 07:22 pts/0    00:00:00 make -f ./scripts/Makefile.build obj=arch/x86/boot install
+root      392192  392185  0 07:22 pts/0    00:00:00 /bin/sh -c sh ./arch/x86/boot/install.sh 5.11.0bb arch/x86/boot/bzImage \ ?System.map "/boot"
+root      392193  392192  0 07:22 pts/0    00:00:00 /bin/sh /sbin/installkernel 5.11.0bb arch/x86/boot/bzImage System.map /boot
+root      392202  392193  0 07:22 pts/0    00:00:00 run-parts --verbose --exit-on-error --arg=5.11.0bb --arg=/boot/vmlinuz-5.11.0bb /etc/kernel/postinst.d
+root      392254  392202  0 07:22 pts/0    00:00:00 /bin/sh -e /etc/kernel/postinst.d/initramfs-tools 5.11.0bb /boot/vmlinuz-5.11.0bb
+root      392256  392254  0 07:22 pts/0    00:00:00 /bin/sh /usr/sbin/update-initramfs -c -k 5.11.0bb -b /boot
+root      392258  392256  0 07:22 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+root      394160  392258  0 07:22 pts/0    00:00:00 modprobe --all --set-version=5.11.0bb --quiet --show-depends fjes virtio_net slip dp83tc811 dp83867 qsemi davicom phylink lxt realtek amd rockchip adin smsc intel-xway xilinx_gmii2rgmii dp83869 microchip cicada icplus dp83848 dp83822 sfp marvell10g vitesse teranetics national nxp-tja11xx aquantia bcm7xxx broadcom ste10Xp bcm54140 mscc et1011c at803x ax88796b uPD60620 cortina microchip_t1 bcm-phy-lib spi_ks8995 micrel marvell dp83640 bcm87xx caif_virtio caif_serial caif_hsi netdevsim geneve vitesse-vsc73xx-core vitesse-vsc73xx-spi realtek-smi lan9303_mdio ar9331 qca8k mv88e6xxx bcm-sf2 ksz9477_spi ksz8795_spi ksz9477_i2c ksz8795 ksz9477 ksz_common mt7530 vitesse-vsc73xx-platform lan9303_i2c lantiq_gswip sja1105 mv88e6060 b53_serdes b53_common b53_mmap b53_srab b53_spi b53_mdio lan9303-core net_failover rionet wireguard vmxnet3 sungem_phy eql mdio-bcm-unimac mdio-gpio mdio-mvusb mdio-i2c mdio-cavium mdio-mscc-miim mdio-thunder mdio-bitbang vrf tap plip fmvj18x_cs 8139too r8169 atp 8139cp ena gve dmfe de4x5 uli526x de2104x tulip winbond-840 xircom_cb macb macb_pci altera_tse cs89x0 liquidio_vf liquidio thunder_bgx thunder_xcv nicpf nicvf cavium_ptp qlcnic qede netxen_nic qed qla3xxx be2net b44 bcmsysport tg3 bnx2 bnx2x cnic genet bnxt_en et131x smc91c92_cs smsc911x smsc9420 epic100 xirc2ps_cs hinic ks8851_mll ksz884x ks8842 ks8851 forcedeth nixge dwmac-intel stmmac stmmac-platform stmmac-pci dwmac-generic nb8800 atlantic axnet_cs ne2k-pci 8390 pcnet_cs lan743x encx24j600 encx24j600-regmap enc28j60 slicoss tlan bna yellowfin hamachi nfp dnet sfc sfc-falcon ethoc sis900 sis190 starfire mlx4_en mlx4_core mlx5_core mlxfw mlxsw_core mlxsw_pci mlxsw_spectrum mlxsw_i2c mlxsw_minimal mlxsw_switchx2 mlxsw_switchib ionic amd-xgbe pcnet32 nmclan_cs amd8111e jme r6040 enic 3c589_cs typhoon 3c509 3c59x 3c574_cs ec_bhf sc92031 fealnx rocker dl2k sundance ll_temac xilinx_emac acenic samsung-sxgbe tehuti myri10ge cxgb ch_ipsec ch_ktls cxgb3 libcxgb cxgb4 cxgb4vf alx atl1c atl1e atl2 atl1 dwc-xlgmac w5100-spi w5100 w5300 via-rhine via-velocity fm10k igc e1000e e1000 igb ixgb e100 ixgbevf ice i40e ixgbe igbvf iavf natsemi ns83820 cassini sungem niu sunhme s2io vxge qcom-emac rmnet skge mvmdio sky2 mcr20a at86rf230 ca8210 cc2520 adf7242 atusb mac802154_hwsim mrf24j40 fakelb mdio thunderbolt-net netconsole pcs-xpcs vxlan vsockmon mii ntb_netdev nlmon macsec pptp ppp_deflate ppp_async pppox bsd_comp ppp_mppe pppoe ppp_synctty defxx skfp bareudp hv_netvsc ipvlan ipvtap gtp
+root      394161  392258  0 07:22 pts/0    00:00:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-5.11.0bb.new 5.11.0bb
+william   394238  142617  0 07:22 pts/3    00:00:00 grep --color=auto pts/0
+william@NPC:/etc/kernel/postinst.d$ 
+
+
+
+
+
