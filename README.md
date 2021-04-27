@@ -17,31 +17,3 @@ You can click the Preview link to take a look at your changes.
 [make-kpkg is (being) retired](https://unix.stackexchange.com/questions/238469/difference-between-make-kpkg-and-make-deb-pkg)
 
 sudo dnf install gcc flex make bison bc openssl openssl-devel elfutils-libelf-devel perl dwarves zstd
-
-https://linuxconfig.org/how-to-install-configure-and-use-mutt-with-a-gmail-account-on-linux
-~/.muttrc
-
-set ssl_force_tls = yes
-set abort_nosubject = no
-set mail_check = 60
-set timeout = 10
-set sort = "reverse-date-received"
-set signature = "~/.mutt/signature"
-set copy = no
-set from = "foo.bar@gmail.com"
-set realname = "Foo Bar"
-
-# Imap settings
-set imap_user = "foo.bar@gmail.com"
-set imap_pass = "<mutt-app-specific-password>"
-
-# Smtp settings
-set smtp_url = "smtps://foo.bar@smtp.gmail.com"
-set smtp_pass = "<mutt-app-specific-password>"
-
-# Remote gmail folders
-set folder = "imaps://imap.gmail.com/"
-set spoolfile = "+INBOX"
-set postponed = "+[Gmail]/Drafts"
-set record = "+[Gmail]/Sent Mail"
-set trash = "+[Gmail]/Trash"
