@@ -2,7 +2,7 @@
 - 👀 I’m interested in Rust and Operating Systems
 - 🌱 I’m currently learning Rust
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me Twitter @\_w62\_
+- 📫 How to reach me Twitter [@\_w62\_](https://twitter.com/_w62_)
 
 <!---
 w62/w62 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
