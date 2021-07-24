@@ -9,9 +9,10 @@ w62/w62 is a ✨ special ✨ repository because its `README.md` (this file) appe
 You can click the Preview link to take a look at your changes.
 --->
 
-<!---
+
 `sed -ri '/CONFIG_SYSTEM_TRUSTED_KEYS/s/=.+/=""/g' .config `
 
+<!---
 [dev-guides](https://cs4118.github.io/dev-guides/)
 
 [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
