@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @w62
+- 👋 Hi, I’m william @w62
 - 👀 I’m interested in Rust and Operating Systems
 - 🌱 I’m currently learning Rust
 - 💞️ I’m looking to collaborate on ...
