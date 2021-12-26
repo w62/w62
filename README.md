@@ -17,6 +17,6 @@ You can click the Preview link to take a look at your changes.
 
 [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 [make-kpkg is (being) retired](https://unix.stackexchange.com/questions/238469/difference-between-make-kpkg-and-make-deb-pkg)
-
-sudo dnf install gcc flex make bison bc openssl openssl-devel elfutils-libelf-devel perl dwarves zstd
 --->
+sudo dnf install gcc flex make bison bc openssl openssl-devel elfutils-libelf-devel perl dwarves zstd
+
