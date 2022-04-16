@@ -21,7 +21,8 @@ You can click the Preview link to take a look at your changes.
 sudo dnf install gcc flex make bison bc openssl openssl-devel elfutils-libelf-devel perl dwarves zstd
 
 bash PS1
-PS1="\[\033[1;34m\]\n\D{}\n[VM \u@\H:\$(pwd)]\n:P > \[\033[0m\]"
+
+export PS1="\033[1;34m\n\D{}\n[VM \u@\H:$(pwd)]\n:P > \033[0m"
 
 zsh PS1
 export PS1=$'\n%n@%m %T %D{%H:%M %a %d-%b-%Y %Z} %d\n> '
