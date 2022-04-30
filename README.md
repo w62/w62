@@ -26,3 +26,7 @@ export PS1="\033[1;34m\n\D{}\n[VM \u@\H:\$(pwd)]\n:P > \033[0m"
 
 zsh PS1
 export PS1=$'\n%n@%m %T %D{%H:%M %a %d-%b-%Y %Z} %d\n> '
+
+https://github.com/BPI-SINOVOIP/BPI-M4-bsp/issues/4
+
+https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available
