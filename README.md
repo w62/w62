@@ -70,3 +70,9 @@ https://github.com/BPI-SINOVOIP/BPI-M4-bsp/issues/4
 https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available
 
 
+minimum qemu command line to boot a kernel
+
+```
+ qemu-system-aarch64 -nographic -machine virt -m 512M -cpu max -smp 4  -kernel arch/arm64/boot/Image.gz
+ 
+ ```
